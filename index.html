@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Encoding and Decoding</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <label for="input">Input</label>
+        <textarea id="input" placeholder="Enter your text here"></textarea>
+        <br>
+        <label for="algorithm">Algorithm</label>
+        <input type="text" id="algorithm" placeholder="Enter custom algorithm or leave blank for random">
+        <br>
+        <button id="create-algorithm">Create Random Algorithm</button>
+        <button id="encode">Encode</button>
+        <button id="clear">Clear</button>
+      </div>
+      <div class="box">
+        <label for="output">Output</label>
+        <textarea id="output" placeholder="Result will appear here"></textarea>
+        <br>
+        <button id="decode">Decode</button>
+        <button id="copy">Copy</button>
+      </div>
+      <div class="icon-container">
+        <a href="Abt" id="info-icon">
+          <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-information-512.png" alt="info-icon" />
+        </a>
+      </div>
+    </div>
+    <div id="info-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Hello</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      var infoModal = document.getElementById("info-modal");
+      var infoIcon = document.getElementById("info-icon");
+      var closeBtn = document.getElementsByClassName("close")[0];
+      
+      infoIcon.onclick = function() {
+        infoModal.style.display = "block";
+      }
+      
+      closeBtn.onclick = function() {
+        infoModal.style.display = "none";
+      }
+      
+      window.onclick = function(event) {
+        if (event.target == infoModal) {
+          infoModal.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

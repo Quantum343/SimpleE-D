@@ -1,0 +1,69 @@
+The algorithm works by replacing each character in the input text with a corresponding character from the generated or user-defined algorithm. This is done using a simple substitution cipher, where each character is mapped to a different character according to the algorithm.
+
+To create a random algorithm, click the "Create Random Algorithm" button. This will generate a new algorithm, which will be displayed in the input field. The algorithm is a string of characters that maps each character in the input text to a different character. The algorithm can be customized by the user by typing a different string of characters in the input field.
+
+To encode text, enter the text in the input field, and then click the "Encode" button. The encoded text will be displayed in the output field.
+
+To decode text, enter the encoded text in the output field, and then click the "Decode" button. The decoded text will be displayed in the input field.
+
+To copy the encoded or decoded text to the clipboard, click the "Copy" button.
+
+To clear the input and output fields, click the "Clear" button.
+
+To create a user-defined algorithm, follow these steps:
+
+a. Start by creating a string of characters that maps each character in the input text to a different character. For example, you could create an algorithm that maps each letter of the alphabet to the corresponding letter shifted by three positions, so that A maps to D, B maps to E, C maps to F, and so on. You could also create an algorithm that maps each character to a different character using a random sequence of characters.
+
+b. Once you have created your algorithm, test it by encoding and decoding some text. Make sure that the encoded text can be properly decoded using the same algorithm.
+
+c. Once you have tested your algorithm, save it for future use. You can do this by copying the algorithm string to a text file or document, or by storing it in a variable in your program if you are using the algorithm in code.
+
+Here are some examples of user-defined algorithms:
+
+Example 1: Shift Cipher
+A shift cipher is a type of substitution cipher in which each letter in the plaintext is shifted a certain number of places down the alphabet.
+
+To create a shift cipher algorithm:
+
+Decide on the number of places each letter should be shifted. For example, you could use a shift of 3, so that A maps to D, B maps to E, C maps to F, and so on.
+
+Create a string of characters that maps each letter to the corresponding shifted letter. For example:
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+DEFGHIJKLMNOPQRSTUVWXYZABC
+
+This algorithm maps each letter to the letter that is three positions down the alphabet.
+
+Test the algorithm by encoding and decoding some text. For example:
+
+Input: HELLO WORLD
+Algorithm: DEFGHIJKLMNOPQRSTUVWXYZABC
+Encoded Text: KHOOR ZRUOG
+Decoded Text: HELLO WORLD
+
+Example 2: Random Sequence
+A random sequence algorithm uses a randomly generated sequence of characters to map each character in the input text to a different character.
+
+
+
+
+To create a random sequence algorithm:
+
+Start by generating a list of unique characters that will be used in your algorithm. You can include any character you want, such as letters, numbers, symbols, etc.
+
+Shuffle the list of characters using a randomization algorithm. This will ensure that each character is assigned a unique value in your algorithm.
+
+Create a mapping of each character to its corresponding value in the shuffled list. For example, if your list of characters is ["a", "b", "c", "d"] and the shuffled list is ["c", "a", "d", "b"], then you would create a mapping like this: {"a": "c", "b": "a", "c": "d", "d": "b"}.
+
+Use this mapping to encode your text. To encode a character, simply replace it with its corresponding value in the mapping.
+
+To decode the encoded text, reverse the mapping so that each value points to its corresponding character. Then, replace each value in the encoded text with its corresponding character in the reversed mapping.
+
+Here's an example of a simple algorithm that uses the steps above:
+
+List of characters: ["a", "b", "c", "d"]
+Shuffled list: ["c", "a", "d", "b"]
+Mapping: {"a": "c", "b": "a", "c": "d", "d": "b"}
+Encoding example: "abc" -> "cad"
+Decoding example: "cad" -> "abc"
+You can create your own custom algorithm by modifying any of these steps. For example, you could change the list of characters, use a different randomization algorithm, or create a more complex mapping. Just make sure that your encoding and decoding algorithms are consistent and can be reproduced by someone else.

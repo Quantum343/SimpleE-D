@@ -1,0 +1,142 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  background-color: #292D30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  width: 45%;
+  background-color: #3C3C3C;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+textarea,
+input[type="text"] {
+  background-color: #CCCCCC;
+  display: block;
+  width: 100%;
+  height: 440px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+  font-size: 16px;
+}
+
+button {
+  background-color: #727272;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #40514F;
+}
+
+#output {
+  height: 530px;
+}
+
+#algorithm {
+  height: 40px;
+  font-size: 16px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #212121;
+  color: #fff;
+}
+
+.box.dark-mode {
+  background-color: #424242;
+  border: 1px solid #333;
+}
+
+textarea.dark-mode,
+input[type="text"].dark-mode {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #111;
+}
+
+button.dark-mode {
+  background-color: #2962ff;
+  color: #fff;
+}
+
+button.dark-mode:hover {
+  background-color: #0039cb;
+}
+
+/* Midnight mode styles */
+body.midnight-mode {
+  background-color: #161625;
+  color: #fff;
+}
+
+.box.midnight-mode {
+  background-color: #2b2b43;
+  border: 1px solid #1e1e37;
+}
+
+textarea.midnight-mode,
+input[type="text"].midnight-mode {
+  background-color: #1e1e37;
+  color: #fff;
+  border: 1px solid #0d0d1a;
+}
+
+button.midnight-mode {
+  background-color: #982cff;
+  color: #fff;
+}
+
+button.midnight-mode:hover {
+  background-color: #5300ca;
+}
+
+
+#copy {
+  background-color: #28a745;
+}
+
+#info-icon {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+}
+
+#info-icon img {
+  width: 10px;
+}
